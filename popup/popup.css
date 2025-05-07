@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    width: 250px;
+    padding: 10px;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .icon {
+    width: 48px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    margin: 8px 0;
+    font-weight: bold;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #result {
+    margin-top: 10px;
+    font-size: 0.9em;
+  }
+  
