@@ -43,6 +43,47 @@ SiteWarnExtension/
 ├── manifest.json
 └── LICENSE
 ```
+## 📊 Arquitetura do Projeto
+
+```mermaid
+graph TD
+    A[Chrome Extension] --> B[Popup Interface]
+    A --> C[Background Script]
+    A --> D[Content Script]
+    
+    B --> E[popup.js]
+    E --> F[api.js]
+    E --> G[storage.js]
+    
+    C --> F
+    C --> G
+    
+    F --> H[VirusTotal API]
+    G --> I[Chrome Storage]
+    
+    subgraph "User Interface"
+        B --> J[Analyze Site]
+        B --> K[View Reports]
+        B --> L[Manage Whitelist]
+    end
+    
+    subgraph "Core Functions"
+        F --> M[URL Scanning]
+        F --> N[Threat Analysis]
+        G --> O[Whitelist Management]
+        G --> P[Settings Storage]
+    end
+    
+    subgraph "Security Features"
+        M --> Q[Real-time Detection]
+        N --> R[Security Reports]
+        O --> S[Trusted Sites]
+    end
+
+    style A fill:#f9f,stroke:#333
+    style H fill:#bbf,stroke:#333
+    style I fill:#bfb,stroke:#333
+```
 
 ## 🚀 Instalação
 
@@ -53,8 +94,8 @@ SiteWarnExtension/
 
 ## 💻 Como Usar
 
-1.Obtenha uma chave API gratuita no site do [VirusTotal](https://www.virustotal.com/gui/join-us)
-2: Abra o arquivo [`scripts/api.js`](scripts/api.js) e insira sua chave API:
+1. Obtenha uma chave API gratuita no site do [VirusTotal](https://www.virustotal.com/gui/join-us)
+2. Abra o arquivo [`scripts/api.js`](scripts/api.js) e insira sua chave API:
 3. Clique no ícone do SiteWarn na barra de ferramentas do Chrome
 4. Pressione "Analisar Site Atual" para escanear a página ativa
 5. Visualize os resultados da análise de segurança

@@ -86,12 +86,12 @@ graph TD
     style I fill:#bfb,stroke:#333
 ```
 
-Esta arquitetura representa o fluxo de dados e a interação entre os diferentes componentes da extensão:
-- Interface do usuário através do popup
-- Scripts de background e content para funcionamento da extensão
-- Integração com a API do VirusTotal
-- Gerenciamento de armazenamento local
-- Recursos de segurança e análise
+This architecture represents the data flow and interaction between the different components of the extension::
+- User interface through the popup
+- Background and content scripts for extension functionality
+- Integration with the VirusTotal API
+- Local storage management
+- Security and analysis features
 
 ## 🚀 Installation
 
@@ -102,12 +102,12 @@ Esta arquitetura representa o fluxo de dados e a interação entre os diferentes
 
 ## 💻 How to Use
 
-1.Get a free API key from the [VirusTotal](https://www.virustotal.com/gui/join-us) website
-2.Open the scripts/api.js file and insert your API key
-3.Click the SiteWarn icon in the Chrome toolbar
-4.Press "Scan Current Site" to analyze the active page
-5.View the security scan results
-6.Optionally, add trusted websites to your whitelist
+1. Get a free API key from the [VirusTotal](https://www.virustotal.com/gui/join-us) website
+2. Open the scripts/api.js file and insert your API key
+3. Click the SiteWarn icon in the Chrome toolbar
+4. Press "Scan Current Site" to analyze the active page
+5. View the security scan results
+6. Optionally, add trusted websites to your whitelist
 
 ## ⚙️ Technical Details
 
